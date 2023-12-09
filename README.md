@@ -9,5 +9,5 @@
 
 PS верстаете на свой вкус. Мне важно, чтобы вы подключили классы к элементам формы из класса Forms. Можно использовать, как пример
 
-                  ![image](https://github.com/AP-Yroki/django_forms/assets/144231060/51d98f76-bdb0-462e-a712-e6fbc9dad6ba)
+
 ![image](https://github.com/AP-Yroki/django_forms/assets/144231060/509a2706-8cef-4a10-ad0c-52823dc106ae)
