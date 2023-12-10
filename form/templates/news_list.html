@@ -1,0 +1,6 @@
+<h1>News List</h1>
+{% for n in news %}
+  <h2>{{ n.title }}</h2>
+  <p>{{ n.text }}</p>
+  <img src="{{ n.image.url }}" alt="{{ n.title }}">
+{% endfor %}

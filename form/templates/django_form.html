@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Форма</title>
+</head>
+<body>
+    <section class="main">
+        <div class="continer">
+            <div class="main__wrapper">
+                <div class="main__block">
+                    <h2 class="main__title">Make an appointment</h2>
+                    <form action="{% url 'appointment' %}" class="main__form" method="post">
+                        {% csrf_token %}
+                        <div class="main__row">
+                            <input type="text" class="main__input" name="name" placeholder="Name">
+                            <input type="text" class="main__input" name="second_name" placeholder="Second Name">
+                        </div>
+                        <div class="main__row">
+                            <input type="text" class="main__input" name="phone_number" placeholder="Phone Number">
+                            <input type="text" class="main__input" name="service" placeholder="Select Service">
+                        </div>
+                        <textarea class="main__textarea" rows="5" name="car_info" placeholder="Tell us about the car needing service(s)"></textarea>
+                        <button class="main__btn" type="submit">Make an Appointment</button>
+                    </form>
+                </div>
+                <div class="main__texts">
+                    <h1 class="main__main-title">Maxime placeat facere possimus omnis </h1>
+                    <p class="main__digits">17k</p>
+                    <p class="main__text">customers served (and counting)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
